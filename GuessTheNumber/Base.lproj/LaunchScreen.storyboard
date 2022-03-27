@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -11,15 +13,62 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="74H-8U-phf">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="startImage" translatesAutoresizingMaskIntoConstraints="NO" id="Cgi-2h-177">
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Угадай число 🎰" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMD-Po-78u">
+                                        <rect key="frame" x="20" y="200" width="388" height="54.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="50"/>
+                                        <color key="textColor" red="1" green="0.96173180729999996" blue="0.76707006600000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Интелектуальная игра" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WU1-Gx-e3q">
+                                        <rect key="frame" x="20" y="793" width="388" height="33"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                        <color key="textColor" red="0.31036434349999997" green="0.14299260820000001" blue="0.42424303759999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="zMD-Po-78u" firstAttribute="top" secondItem="74H-8U-phf" secondAttribute="top" constant="200" id="0d4-sy-HFF"/>
+                                    <constraint firstAttribute="trailing" secondItem="zMD-Po-78u" secondAttribute="trailing" constant="20" id="GP2-qf-YNq"/>
+                                    <constraint firstAttribute="trailing" secondItem="WU1-Gx-e3q" secondAttribute="trailing" constant="20" id="HIn-gG-DvV"/>
+                                    <constraint firstItem="WU1-Gx-e3q" firstAttribute="leading" secondItem="74H-8U-phf" secondAttribute="leading" constant="20" id="IwK-NW-XkF"/>
+                                    <constraint firstItem="Cgi-2h-177" firstAttribute="top" secondItem="74H-8U-phf" secondAttribute="top" id="J39-Hg-i5A"/>
+                                    <constraint firstItem="zMD-Po-78u" firstAttribute="leading" secondItem="74H-8U-phf" secondAttribute="leading" constant="20" id="Lhp-Jc-HPR"/>
+                                    <constraint firstAttribute="bottom" secondItem="WU1-Gx-e3q" secondAttribute="bottom" constant="100" id="OXv-nm-phF"/>
+                                    <constraint firstItem="Cgi-2h-177" firstAttribute="leading" secondItem="74H-8U-phf" secondAttribute="leading" id="o1c-U4-ljb"/>
+                                    <constraint firstAttribute="trailing" secondItem="Cgi-2h-177" secondAttribute="trailing" id="vru-ek-TpD"/>
+                                    <constraint firstAttribute="bottom" secondItem="Cgi-2h-177" secondAttribute="bottom" id="xwo-sc-xNU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="74H-8U-phf" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Gvn-vI-Ru0"/>
+                            <constraint firstItem="74H-8U-phf" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ayO-el-MZ1"/>
+                            <constraint firstItem="74H-8U-phf" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" id="fWd-j0-JDI"/>
+                            <constraint firstItem="74H-8U-phf" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="htW-FR-g8r"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="startImage" width="450" height="450"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
